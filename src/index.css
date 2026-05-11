@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-lagoon-50 text-slatemuted-800 antialiased;
+}
+
+@layer components {
+  details.timeline-disclosure[open] .timeline-chevron {
+    transform: rotate(180deg);
+  }
+}
