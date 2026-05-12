@@ -24,7 +24,7 @@ export function Phase1Form() {
         </span>
         <div>
           <h2 id="phase-1-heading" className="font-display text-xl font-semibold text-slatemuted-900">
-            Phase 1 — The foundation
+            Phase 1 — Initial Information
           </h2>
           <p className="text-sm text-slatemuted-500">Manual entry. We validate timing as you go.</p>
         </div>
@@ -38,7 +38,7 @@ export function Phase1Form() {
           </h3>
           <div className="space-y-4">
             <div>
-              <FieldLabel htmlFor="petName">Pet name</FieldLabel>
+              <FieldLabel htmlFor="petName">Pet Name</FieldLabel>
               <input
                 id="petName"
                 type="text"
@@ -50,7 +50,7 @@ export function Phase1Form() {
               />
             </div>
             <div>
-              <FieldLabel htmlFor="microchip">Microchip number</FieldLabel>
+              <FieldLabel htmlFor="microchip">Microchip Number</FieldLabel>
               <input
                 id="microchip"
                 type="text"
@@ -71,7 +71,7 @@ export function Phase1Form() {
           </h3>
           <div className="space-y-4">
             <div>
-              <FieldLabel htmlFor="chipDate">Microchip implantation date</FieldLabel>
+              <FieldLabel htmlFor="chipDate">Microchip Implantation Date</FieldLabel>
               <input
                 id="chipDate"
                 type="date"
@@ -82,7 +82,7 @@ export function Phase1Form() {
               <p className="mt-1.5 text-xs text-slatemuted-500">Must be on or before the first rabies shot.</p>
             </div>
             <div>
-              <FieldLabel htmlFor="rabies1">Rabies vaccination #1</FieldLabel>
+              <FieldLabel htmlFor="rabies1">Rabies Vaccination #1</FieldLabel>
               <input
                 id="rabies1"
                 type="date"
@@ -92,7 +92,7 @@ export function Phase1Form() {
               />
             </div>
             <div>
-              <FieldLabel htmlFor="rabies2">Rabies vaccination #2</FieldLabel>
+              <FieldLabel htmlFor="rabies2">Rabies Vaccination #2</FieldLabel>
               <input
                 id="rabies2"
                 type="date"
@@ -103,7 +103,7 @@ export function Phase1Form() {
               <p className="mt-1.5 text-xs text-slatemuted-500">Must be at least 30 days after rabies #1.</p>
             </div>
             <div>
-              <FieldLabel htmlFor="favn">FAVN (titer) blood draw date</FieldLabel>
+              <FieldLabel htmlFor="favn">FAVN (titer) Blood Draw Date - Vet Visit Required</FieldLabel>
               <input
                 id="favn"
                 type="date"

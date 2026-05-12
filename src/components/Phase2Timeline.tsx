@@ -78,9 +78,11 @@ export function Phase2Timeline() {
               For quarantine avoidance planning tied to your FAVN timeline, HDOA
               materials often reference a{' '}
               <span className='font-medium text-slatemuted-800'>120-day</span>{' '}
-              milestone from the draw—confirm how this applies to your exact
-              program with HDOA and your vet.
+              milestone from the draw. This is due to the weeks needed to
+              process samples in the lab (about 6-8 weeks) and time for lab
+              results to be sent to Hawaii Department of Agriculture.
             </p>
+
             <p className='mt-4 font-display text-lg font-semibold text-slatemuted-900'>
               {timeline.dateAfter120Days
                 ? formatLong(timeline.dateAfter120Days)
@@ -109,24 +111,18 @@ export function Phase2Timeline() {
             ) : (
               <>
                 <p className='mt-3 text-sm leading-relaxed text-slatemuted-600'>
-                  Treat{' '}
+                  Treat the{' '}
                   <span className='font-semibold text-slatemuted-900'>
-                    on or after
+                    30-day rule
                   </span>{' '}
-                  the 30-day rule date as your earliest planned arrival for
-                  FAVN-based timing, then align the 120-day milestone and forms
-                  with HDOA.
+                  with a grain of salt. Lab tests take time. Your dog will not
+                  qualitfy for direct release unless HDOA has the test results.
+                  So get the FAVN as soon as possible, and ideally allow{' '}
+                  <span className='font-semibold text-slatemuted-900'>
+                    120 days
+                  </span>{' '}
+                  after FAVN blood drawn to depart with your dog.
                 </p>
-                <p className='mt-4 rounded-xl bg-gradient-to-r from-lagoon-50 to-palm-50 px-3 py-2 font-display text-base font-semibold text-palm-900'>
-                  {timeline.earliestAfter30Days
-                    ? `Earliest planned arrival: ${formatLong(timeline.earliestAfter30Days)}`
-                    : '—'}
-                </p>
-                {timeline.safeWindowSummary && (
-                  <p className='mt-3 text-xs leading-relaxed text-slatemuted-500'>
-                    {timeline.safeWindowSummary}
-                  </p>
-                )}
               </>
             )}
           </article>

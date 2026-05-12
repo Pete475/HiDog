@@ -37,9 +37,9 @@ export function LandingPage() {
         </h1>
 
         <p className='mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slatemuted-600 sm:text-xl'>
-          It takes 4-6 months to qualify for Direct Airport Release. Use our
-          step-by-step guide to navigate Hawaii&apos;s strict quarantine rules
-          with confidence.
+          It takes 4-6 months to qualify for Direct Airport Release.
+          <br></br>Use our step-by-step guide to navigate Hawaii&apos;s strict
+          quarantine rules with confidence.
         </p>
 
         <Link
@@ -51,7 +51,7 @@ export function LandingPage() {
       </main>
 
       <footer className='relative z-10 border-t border-lagoon-100/80 bg-white/50 px-4 py-6 text-center text-xs text-slatemuted-500 backdrop-blur-sm'>
-        HiDog is a planning aid only. Confirm every requirement with{' '}
+        HiDog is a planning guide only. Confirm every requirement with{' '}
         <a
           className='font-medium text-lagoon-700 underline decoration-lagoon-300 underline-offset-2 hover:text-palm-700'
           href='https://hdoa.hawaii.gov/ai/aqs/aqs-info/'
